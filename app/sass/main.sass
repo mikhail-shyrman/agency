@@ -29,5 +29,58 @@ header
     background-repeat: no-repeat
     background-position: top center
     min-height: 985px
-
+    .top_header
+        padding-top: 25px
+        .logo
+            float: left
+        .menu
+            float: right
+            font-family: $dos
+            font-weight: 500
+            font-size: 12px
+            color: #fff
+            text-transform: uppercase
+            line-height: 40px
+            li
+                display: inline-block
+            li+li
+                padding-left: 20px
+            a
+                &:hover
+                    color: $orange
+                    transition: all 0.2s
+    .header_content
+        padding-top: 315px
+        .slider
+            .slide
+                min-height: 335px
+                h1
+                    font-family: $dos
+                    font-weight: 700
+                    font-size: 54px
+                    text-transform: uppercase
+                    color: #fff
+                    line-height: 40px
+                    position: relative
+                    span
+                        display: block
+                        font-size: 90px
+                        line-height: 80px
+                    &::after
+                        content: ""
+                        height: 5px
+                        width: 75px
+                        background-color: #fff
+                        border-radius: 3px
+                        display: block
+                        position: absolute
+                        left: 0
+                        top: 162px
+                p
+                    margin: 0
+                    padding-top: 70px
+                    color: #fff
+                    font-size: 16px
+                    line-height: 40px
+        
 @import "media"
