@@ -5,23 +5,105 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
     /**/
+    .clients
+        .name_bar
+            float: none
+            text-align: center
+            a
+                &::after
+                    content: none
+        .company
+            float: none
+            text-align: center
 
 
 /* Medium Devices, Desktop */
 @media only screen and (max-width : 992px)
     /**/
-
-    
+    .header
+        background-image: none
+        background: linear-gradient(to right, #5192ff, #52bcff)
+        .header_content
+            .btn_next
+                margin-top: 30px
+            .slick-dots
+                display: none
+    .experience
+        .btn_exp
+            margin-bottom: 20px
+        .col-md-3:nth-child(2)
+            border-top: 1px solid #e7eaed
+            border-right: 1px solid #e7eaed
+        .col-md-3:nth-child(4)
+            border-right: 1px solid #e7eaed
+            border-bottom: 1px solid #e7eaed
+        .col-md-3:last-child
+            border-bottom: 1px solid #e7eaed
+            margin-bottom: 20px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
     /**/
-    
-    
+    .header
+        min-height: 900px
+        .top_header
+            .btn_menu
+                display: block
+                position: relative
+            .menu
+                ul
+                    display: none
+                    position: absolute
+                    left: 0
+                    right: 0
+                    top: 90px
+                    text-align: center
+                    background-color: rgba( 70, 100, 150, 0.1 )
+                    //border-top: 1px solid #0c84c4
+                    z-index: 10
+                li
+                    line-height: 35px
+                    padding-left: 0
+                    display: block
+                    &:hover
+                        background-color: #fff
+                        transition: all 0.2s
+                a
+                    display: block
+        .header_content
+            padding-top: 155px
+    .about,
+    .experience
+        text-align: center
+        h3
+            &::after
+                content: ""
+                top: 105px
+                left: 0
+                right: 0
+                margin: 0 auto
+        p
+            margin: 0 auto
+            
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
     /**/
-    
-    
+    .clients
+        .company
+            ul
+                li
+                    display: block
+    .about,
+    .experience
+        h3
+            font-size: 25px
+            line-height: 35px
+        h4
+            padding-top: 170px
+            &::before
+                top: 75px
+            
+            
+                    
 /* Custom, iPhones Retina */
 @media only screen and (max-width : 320px)
     /**/
@@ -42,6 +124,11 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
     /**/
+    .header
+        .top_header
+            .menu
+                ul
+                    display: block !important
     
     
 /* Medium Devices, Desktop */
