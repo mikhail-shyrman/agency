@@ -1,7 +1,7 @@
 @import "vars"
 @import "fonts"
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, p
     margin: 0
 
 body
@@ -294,8 +294,179 @@ header
             padding-top: 30px
             color: #878796
             table
+                margin-bottom: 130px
+                td
+                    padding-bottom: 10px
                 td:first-child
                     font-weight: 600
+                td:nth-child(2)
+                    padding-left: 35px
+                td:last-child
+                    padding-left: 10px
+                a
+                    color: $orange
+                    
+.portfolio
+    background-color: #222227
+    text-align: center
+    .work_slider
+        .slick-slide
+            outline: none
+        .website
+            background-color: #28282e
+            width: 370px !important
+            height: 240px
+            margin-top: 60px
+            .logo_site
+                line-height: 240px
+                img
+                    display: inline-block
+            .description
+                display: none
+            &:hover
+                transition: all 0.5s
+                background-color: #fff
+                .logo_site
+                    display: none
+                    transition: all 0.5s
+                .description
+                    transition: all 0.5s
+                    display: block
+                    padding: 10px
+                    img
+                        display: block
+                        margin: 0 auto 15px
+                    .text
+                        max-width: 260px
+                        display: inline-block
+                        span
+                            font-weight: 600
+                            display: inline-block
+                    a
+                        display: block
+                        color: $orange
+                        margin-top: 15px
+    ul
+        li
+            display: inline-block
+            margin: 30px 10px 60px
+        .prev,
+        .next
+            color: #28282e
+            font-size: 14px
+            cursor: pointer
+            border: 1px dashed #42424a
+            padding: 12px 24px
+        .show_all
+            border: 1px dashed #42424a
+            color: #fff
+            background-color: #000
+            font-size: 13px
+            text-transform: uppercase
+            display: inline-block
+            letter-spacing: 2px
+            a
+                display: block
+                padding: 12px 26px
+                
+.focus
+    padding-top: 150px
+    padding-bottom: 70px
+    h3
+        @extend %h_default
+    h4
+        font-family: $dos
+        font-weight: 700
+        font-size: 16px
+        text-transform: uppercase
+        line-height: 40px
+        text-align: center
+        outline: 1px solid #e7eaed
+        border: 10px solid #fff
+        min-width: 270px
+        height: 170px
+        margin-bottom: 30px
+        padding-top: 90px
+        position: relative
+        &:hover
+            background-color: #f3f3f3
+            border: 10px solid #fff
+        &::before
+            content: ""
+            background-image: url(../img/css_sprites.png)
+            background-position: -246px -132px
+            width: 42px
+            height: 32px
+            position: absolute
+            top: 45px
+            left: 0
+            right: 0
+            margin: 0 auto
+    .col-md-3:nth-child(3)
+        h4
+            &::before
+                background-position: -246px -72px
+                width: 40px
+                height: 40px
+    .col-md-3:nth-child(4)
+        h4
+            &::before
+                background-position: -143px -174px
+                width: 48px
+                height: 36px
+    .col-md-3:nth-child(5)
+        h4
+            &::before
+                background-position: -10px -174px
+                width: 48px
+                height: 48px
+    .col-md-3:nth-child(6)
+        h4
+            &::before
+                background-position: -178px -94px
+                width: 48px
+                height: 48px
+    .col-md-3:nth-child(7)
+        h4
+            &::before
+                background-position: -78px -174px
+                width: 45px
+                height: 40px
+    .col-md-3:nth-child(8)
+        h4
+            &::before
+                background-position: -246px -10px
+                width: 42px
+                height: 42px
+    .col-md-3:nth-child(9)
+        h4
+            &::before
+                background-position: -10px -242px
+                width: 47px
+                height: 36px
+    .col-md-3:nth-child(10)
+        h4
+            &::before
+                background-position: -94px -94px
+                width: 48px
+                height: 48px
+    .btn_all
+        text-align: center
+        border: 1px solid #e7eaed
+        min-width: 270px
+        height: 170px
+        margin-bottom: 30px
+        line-height: 160px
+        a
+            background-color: $orange
+            padding: 18px 30px
+            border-radius: 3px
+            color: #fff
+            font-size: 13px
+            text-transform: uppercase
+            letter-spacing: 2px
+        
+            
             
         
                 

@@ -26,8 +26,6 @@
         .header_content
             .btn_next
                 margin-top: 30px
-            .slick-dots
-                display: none
     .experience
         .btn_exp
             margin-bottom: 20px
@@ -40,6 +38,8 @@
         .col-md-3:last-child
             border-bottom: 1px solid #e7eaed
             margin-bottom: 20px
+    .work
+        background-image: none
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
     /**/
@@ -57,7 +57,7 @@
                     right: 0
                     top: 90px
                     text-align: center
-                    background-color: rgba( 70, 100, 150, 0.1 )
+                    background-color: #5192ff
                     //border-top: 1px solid #0c84c4
                     z-index: 10
                 li
@@ -72,7 +72,8 @@
         .header_content
             padding-top: 155px
     .about,
-    .experience
+    .experience,
+    .focus
         text-align: center
         h3
             &::after
@@ -107,6 +108,10 @@
 /* Custom, iPhones Retina */
 @media only screen and (max-width : 320px)
     /**/
+    .portfolio
+        ul
+            li
+                margin: 30px 3px
     
     
 /*==========    Mobile First    ==========*/

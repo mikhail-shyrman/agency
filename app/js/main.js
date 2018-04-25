@@ -8,7 +8,36 @@ $(document).ready(function() {
         swipe: false,
         verticalSwiping: true,
         prevArrow: $('.btn_prev'),
-        nextArrow: $('.btn_next')
+        nextArrow: $('.btn_next'),
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    $('.work_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 });
 

@@ -1,4 +1,4 @@
-.about h3, .experience h3 {
+.about h3, .experience h3, .focus h3 {
   font-family: "Dosis", sans-serif;
   font-size: 30px;
   text-transform: uppercase;
@@ -7,12 +7,12 @@
   padding-bottom: 33px;
 }
 
-.about h3 span, .experience h3 span {
+.about h3 span, .experience h3 span, .focus h3 span {
   font-size: 50px;
   display: block;
 }
 
-.about h3::after, .experience h3::after {
+.about h3::after, .experience h3::after, .focus h3::after {
   content: "";
   width: 35px;
   height: 5px;
@@ -93,7 +93,7 @@
   content: "\f105";
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -491,11 +491,238 @@ header .header_content .slick-active button {
   color: #878796;
 }
 
+.work .info .table table {
+  margin-bottom: 130px;
+}
+
+.work .info .table table td {
+  padding-bottom: 10px;
+}
+
 .work .info .table table td:first-child {
   font-weight: 600;
 }
 
-.about h3, .experience h3 {
+.work .info .table table td:nth-child(2) {
+  padding-left: 35px;
+}
+
+.work .info .table table td:last-child {
+  padding-left: 10px;
+}
+
+.work .info .table table a {
+  color: #f16522;
+}
+
+.portfolio {
+  background-color: #222227;
+  text-align: center;
+}
+
+.portfolio .work_slider .slick-slide {
+  outline: none;
+}
+
+.portfolio .work_slider .website {
+  background-color: #28282e;
+  width: 370px !important;
+  height: 240px;
+  margin-top: 60px;
+}
+
+.portfolio .work_slider .website .logo_site {
+  line-height: 240px;
+}
+
+.portfolio .work_slider .website .logo_site img {
+  display: inline-block;
+}
+
+.portfolio .work_slider .website .description {
+  display: none;
+}
+
+.portfolio .work_slider .website:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #fff;
+}
+
+.portfolio .work_slider .website:hover .logo_site {
+  display: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.portfolio .work_slider .website:hover .description {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  display: block;
+  padding: 10px;
+}
+
+.portfolio .work_slider .website:hover .description img {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.portfolio .work_slider .website:hover .description .text {
+  max-width: 260px;
+  display: inline-block;
+}
+
+.portfolio .work_slider .website:hover .description .text span {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.portfolio .work_slider .website:hover .description a {
+  display: block;
+  color: #f16522;
+  margin-top: 15px;
+}
+
+.portfolio ul li {
+  display: inline-block;
+  margin: 30px 10px 60px;
+}
+
+.portfolio ul .prev,
+.portfolio ul .next {
+  color: #28282e;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px dashed #42424a;
+  padding: 12px 24px;
+}
+
+.portfolio ul .show_all {
+  border: 1px dashed #42424a;
+  color: #fff;
+  background-color: #000;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+.portfolio ul .show_all a {
+  display: block;
+  padding: 12px 26px;
+}
+
+.focus {
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+
+.focus h4 {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 40px;
+  text-align: center;
+  outline: 1px solid #e7eaed;
+  border: 10px solid #fff;
+  min-width: 270px;
+  height: 170px;
+  margin-bottom: 30px;
+  padding-top: 90px;
+  position: relative;
+}
+
+.focus h4:hover {
+  background-color: #f3f3f3;
+  border: 10px solid #fff;
+}
+
+.focus h4::before {
+  content: "";
+  background-image: url(../img/css_sprites.png);
+  background-position: -246px -132px;
+  width: 42px;
+  height: 32px;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.focus .col-md-3:nth-child(3) h4::before {
+  background-position: -246px -72px;
+  width: 40px;
+  height: 40px;
+}
+
+.focus .col-md-3:nth-child(4) h4::before {
+  background-position: -143px -174px;
+  width: 48px;
+  height: 36px;
+}
+
+.focus .col-md-3:nth-child(5) h4::before {
+  background-position: -10px -174px;
+  width: 48px;
+  height: 48px;
+}
+
+.focus .col-md-3:nth-child(6) h4::before {
+  background-position: -178px -94px;
+  width: 48px;
+  height: 48px;
+}
+
+.focus .col-md-3:nth-child(7) h4::before {
+  background-position: -78px -174px;
+  width: 45px;
+  height: 40px;
+}
+
+.focus .col-md-3:nth-child(8) h4::before {
+  background-position: -246px -10px;
+  width: 42px;
+  height: 42px;
+}
+
+.focus .col-md-3:nth-child(9) h4::before {
+  background-position: -10px -242px;
+  width: 47px;
+  height: 36px;
+}
+
+.focus .col-md-3:nth-child(10) h4::before {
+  background-position: -94px -94px;
+  width: 48px;
+  height: 48px;
+}
+
+.focus .btn_all {
+  text-align: center;
+  border: 1px solid #e7eaed;
+  min-width: 270px;
+  height: 170px;
+  margin-bottom: 30px;
+  line-height: 160px;
+}
+
+.focus .btn_all a {
+  background-color: #f16522;
+  padding: 18px 30px;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about h3, .experience h3, .focus h3 {
   font-family: "Dosis", sans-serif;
   font-size: 30px;
   text-transform: uppercase;
@@ -504,12 +731,12 @@ header .header_content .slick-active button {
   padding-bottom: 33px;
 }
 
-.about h3 span, .experience h3 span {
+.about h3 span, .experience h3 span, .focus h3 span {
   font-size: 50px;
   display: block;
 }
 
-.about h3::after, .experience h3::after {
+.about h3::after, .experience h3::after, .focus h3::after {
   content: "";
   width: 35px;
   height: 5px;
@@ -562,9 +789,6 @@ header .header_content .slick-active button {
   .header .header_content .btn_next {
     margin-top: 30px;
   }
-  .header .header_content .slick-dots {
-    display: none;
-  }
   .experience .btn_exp {
     margin-bottom: 20px;
   }
@@ -579,6 +803,9 @@ header .header_content .slick-active button {
   .experience .col-md-3:last-child {
     border-bottom: 1px solid #e7eaed;
     margin-bottom: 20px;
+  }
+  .work {
+    background-image: none;
   }
 }
 
@@ -599,7 +826,7 @@ header .header_content .slick-active button {
     right: 0;
     top: 90px;
     text-align: center;
-    background-color: rgba(70, 100, 150, 0.1);
+    background-color: #5192ff;
     z-index: 10;
   }
   .header .top_header .menu li {
@@ -620,11 +847,13 @@ header .header_content .slick-active button {
     padding-top: 155px;
   }
   .about,
-  .experience {
+  .experience,
+  .focus {
     text-align: center;
   }
   .about h3::after,
-  .experience h3::after {
+  .experience h3::after,
+  .focus h3::after {
     content: "";
     top: 105px;
     left: 0;
@@ -632,7 +861,8 @@ header .header_content .slick-active button {
     margin: 0 auto;
   }
   .about p,
-  .experience p {
+  .experience p,
+  .focus p {
     margin: 0 auto;
   }
 }
@@ -661,6 +891,9 @@ header .header_content .slick-active button {
 /* Custom, iPhones Retina */
 @media only screen and (max-width: 320px) {
   /**/
+  .portfolio ul li {
+    margin: 30px 3px;
+  }
 }
 
 /*==========    Mobile First    ==========*/
