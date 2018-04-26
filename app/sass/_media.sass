@@ -40,6 +40,9 @@
             margin-bottom: 20px
     .work
         background-image: none
+    .feature
+        .mockup
+            text-align: center
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
     /**/
@@ -73,7 +76,8 @@
             padding-top: 155px
     .about,
     .experience,
-    .focus
+    .focus,
+    .feature
         text-align: center
         h3
             &::after
@@ -84,7 +88,15 @@
                 margin: 0 auto
         p
             margin: 0 auto
-            
+    .feature
+        .mockup
+            img
+                max-width: 457px
+                width: 100%
+                box-shadow: none
+        .feature_content
+            .btn_feature
+                display: inline-block
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
     /**/
@@ -102,8 +114,20 @@
             padding-top: 170px
             &::before
                 top: 75px
+    .feature
+        padding-top: 100px
+        padding-bottom: 70px
             
-            
+/* Custom, iPhones Retina */
+@media only screen and (max-width : 380px)
+    /**/
+    .feature
+        .feature_content
+            .btn_feature
+                .btn_more
+                    margin-right: 5px
+
+    
                     
 /* Custom, iPhones Retina */
 @media only screen and (max-width : 320px)
